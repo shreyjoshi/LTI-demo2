@@ -7,7 +7,7 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem ,copyArrayItem} from '@
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ltidemo1';
+  title = 'Drag and Drop Demo';
   items =[
   	'Join',
   	'Sort',

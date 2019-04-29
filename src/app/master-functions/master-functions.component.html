@@ -1,0 +1,16 @@
+
+
+
+<div style="display: flex">
+  <div>
+  <ul class="masterComponents">
+    <li *ngFor="let masterComponent of masterComponents" 
+    [class.selected]="masterComponent === selectedmasterComponent" >
+    <button class="li" id="{{masterComponent.componentId}}" type="button" (click)="onSelect(masterComponent)" draggable="true" (dragstart)="drag(($event))">{{masterComponent.componentName}}
+        </button>
+    </li>
+  </ul>
+</div>
+
+<div id=123 class="masterComponentsDrop" (drop)="drop(($event))" (dragover)="allowDrop(($event))"></div>
+</div>
